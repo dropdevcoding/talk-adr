@@ -1,0 +1,32 @@
+[
+    {
+        "filename": "index.html",
+        "attr": {
+            "class": "center",
+            "id": "slide-index"
+        }
+    },
+    {
+        "filename": "whoami.html",
+        "attr": {
+            "class": "center",
+            "id": "slide-whoami"
+        }
+    },
+    {
+        "filename": "synopsis.html",
+        "attr": {
+            "id": "slide-synopsis"
+        }
+    },
+    "a-retrospect-on-mvc.html",
+    "mvc-on-the-web-i.html",
+    "mvc-on-the-web-ii.html",
+    "disadvantages.html",
+    "don-t-get-me-wrong.html",
+    "refinement-controller.html",
+    "refinement-controller-ii.html",
+    "refinement-model.html",
+    "refinement-view-i.html",
+    "summing-up-i.html"
+]

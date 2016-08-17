@@ -1,0 +1,12 @@
+{
+  "generator-bitexpert-slides": {
+    "presentationTitle": "Action Domain Responder",
+    "presenterName": "Peter Hildenbrand",
+    "presentationDate": "25.08.2016",
+    "showVerticalNavigation": false,
+    "packageVersion": "0.0.0",
+    "revealTheme": "blood",
+    "useSass": true,
+    "deployToGithubPages": false
+  }
+}

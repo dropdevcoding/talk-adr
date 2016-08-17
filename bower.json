@@ -1,0 +1,9 @@
+{
+  "name": "action-domain-responder",
+  "version": "0.0.0",
+  "dependencies": {
+    "reveal.js": "~3.2.0",
+    "highlightjs": "~9.0.0",
+    "components-font-awesome": "components/font-awesome#~4.6.3"
+  }
+}

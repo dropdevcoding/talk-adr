@@ -1,0 +1,23 @@
+<h2>Refinement (Controller)</h2>
+
+<ul>
+    <li class="fragment">
+        What about the single responsibilty principle?
+    </li>
+    <li class="fragment">
+        The controller is responsible for more than one action
+    </li>
+    <li class="fragment">
+        What about dependency injection?
+    </li>
+    <li class="fragment">
+        If indexAction needs other dependencies than removeAction all dependencies need to be injected though
+    </li>
+    <li class="fragment">
+        Each method needs to know which response to sent (rendering a template etc.)
+    </li>
+    <li class="fragment">
+        To avoid these disadvantages let's split the controller into separate action classes for each <b>ACTION</b>
+        and get rid of the response since this should not be a job of an action
+    </li>
+</ul>
