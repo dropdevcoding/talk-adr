@@ -1,0 +1,30 @@
+{
+    "name": "app",
+    "description": "app",
+    "require": {
+        "bitexpert/adrenaline": "^0.1.0",
+        "bitexpert/disco": "^0.3.0",
+        "psr/http-message": "^1.0",
+        "monolog/monolog": "^1.19.0",
+        "bitexpert/slf4psrlog": "^0.1.0",
+        "bitexpert/specialist": "^0.1.0"
+    },
+    "require-dev": {
+        "phpunit/php-code-coverage": "^2.1.0",
+        "phpunit/phpunit": "^4.8",
+        "squizlabs/php_codesniffer": "^2.3",
+        "phpdocumentor/phpdocumentor": "^2.8",
+        "phing/phing": "^2.8.0",
+        "bitexpert/phing-securitychecker": "^0.2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "TalkDemo\\": "src/TalkDemo"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TalkDemo\\": "tests/TalkDemo"
+        }
+    }
+}

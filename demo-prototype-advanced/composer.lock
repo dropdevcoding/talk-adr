@@ -1,0 +1,736 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "ebb5910cc9f5405d72d379864d6fceed",
+    "content-hash": "8f73730c44e91c75f6d5c7b61319514a",
+    "packages": [
+        {
+            "name": "bitexpert/adrenaline",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bitExpert/adrenaline.git",
+                "reference": "39bd4424795248c8b1e93a54681421a53918a847"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bitExpert/adrenaline/zipball/39bd4424795248c8b1e93a54681421a53918a847",
+                "reference": "39bd4424795248c8b1e93a54681421a53918a847",
+                "shasum": ""
+            },
+            "require": {
+                "bitexpert/adroit": "^0.4.0",
+                "bitexpert/pathfinder": "^0.4.0",
+                "bitexpert/slf4psrlog": "^0.1.0",
+                "php": "^5.5|^7.0",
+                "psr/http-message": "^1.0",
+                "twig/twig": "^1.24",
+                "willdurand/negotiation": "^2.0",
+                "zendframework/zend-diactoros": "^1.0.0"
+            },
+            "require-dev": {
+                "bitexpert/phing-securitychecker": "^0.2.1",
+                "mikey179/vfsstream": "~1",
+                "monolog/monolog": "^1.14.0",
+                "phing/phing": "^2.8.0",
+                "phpdocumentor/phpdocumentor": "^2.8",
+                "phpunit/php-code-coverage": "^2.1.0",
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "bitExpert\\Adrenaline\\": "src/bitExpert/Adrenaline"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Stephan Hochdörfer",
+                    "email": "S.Hochdoerfer@bitExpert.de",
+                    "homepage": "http://www.bitExpert.de"
+                },
+                {
+                    "name": "Peter Hildenbrand",
+                    "email": "P.Hildenbrand@bitExpert.de",
+                    "homepage": "http://www.bitExpert.de"
+                }
+            ],
+            "description": "A PSR-7 micro framework built on top of the Adroit middleware.",
+            "time": "2016-06-20 12:08:32"
+        },
+        {
+            "name": "bitexpert/adroit",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bitExpert/adroit.git",
+                "reference": "0575c29c9e99d93bf4ed3f9cca20ce9089387a9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bitExpert/adroit/zipball/0575c29c9e99d93bf4ed3f9cca20ce9089387a9a",
+                "reference": "0575c29c9e99d93bf4ed3f9cca20ce9089387a9a",
+                "shasum": ""
+            },
+            "require": {
+                "bitexpert/slf4psrlog": "^0.1.0",
+                "container-interop/container-interop": "^1.1.0",
+                "php": "^5.5|^7.0",
+                "psr/http-message": "^1.0",
+                "zendframework/zend-stratigility": "^1.1.0"
+            },
+            "require-dev": {
+                "bitexpert/phing-securitychecker": "^0.2.1",
+                "monolog/monolog": "^1.14.0",
+                "phake/phake": "2.*",
+                "phing/phing": "^2.8.0",
+                "phpdocumentor/phpdocumentor": "^2.8",
+                "phpunit/php-code-coverage": "^2.1.0",
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "^2.3",
+                "zendframework/zend-diactoros": "^1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "bitExpert\\Adroit\\": "src/bitExpert/Adroit"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Stephan Hochdörfer",
+                    "email": "S.Hochdoerfer@bitExpert.de",
+                    "homepage": "http://www.bitExpert.de"
+                },
+                {
+                    "name": "Peter Hildenbrand",
+                    "email": "P.Hildenbrand@bitExpert.de",
+                    "homepage": "http://www.bitExpert.de"
+                }
+            ],
+            "description": "PSR-7 Middleware based on the ADR (Action Domain Responder) paradigm.",
+            "time": "2016-06-19 08:02:41"
+        },
+        {
+            "name": "bitexpert/pathfinder",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bitExpert/pathfinder.git",
+                "reference": "0c5982574be7dec74710dcd4b54c882fdb78ba84"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bitExpert/pathfinder/zipball/0c5982574be7dec74710dcd4b54c882fdb78ba84",
+                "reference": "0c5982574be7dec74710dcd4b54c882fdb78ba84",
+                "shasum": ""
+            },
+            "require": {
+                "bitexpert/slf4psrlog": "^0.1.0",
+                "php": "^5.5|^7.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "bitexpert/phing-securitychecker": "^0.2.1",
+                "monolog/monolog": "^1.14.0",
+                "phing/phing": "^2.8.0",
+                "phpdocumentor/phpdocumentor": "^2.8",
+                "phpunit/php-code-coverage": "^2.1.0",
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "^2.3",
+                "zendframework/zend-diactoros": "^1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "bitExpert\\Pathfinder\\": "src/bitExpert/Pathfinder"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Stephan Hochdörfer",
+                    "email": "S.Hochdoerfer@bitExpert.de",
+                    "homepage": "http://www.bitExpert.de"
+                },
+                {
+                    "name": "Peter Hildenbrand",
+                    "email": "P.Hildenbrand@bitExpert.de",
+                    "homepage": "http://www.bitExpert.de"
+                }
+            ],
+            "description": "PSR-7 compatible routing component",
+            "time": "2016-06-19 08:15:31"
+        },
+        {
+            "name": "bitexpert/slf4psrlog",
+            "version": "0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bitExpert/slf4psrlog.git",
+                "reference": "40408cb83f08738b630f1a90b2824c0a39b619af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bitExpert/slf4psrlog/zipball/40408cb83f08738b630f1a90b2824c0a39b619af",
+                "reference": "40408cb83f08738b630f1a90b2824c0a39b619af",
+                "shasum": ""
+            },
+            "require": {
+                "psr/log": "^1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "^2.8.0",
+                "phpmd/phpmd": "^2.2.0",
+                "phpunit/php-code-coverage": "^2.1.0",
+                "phpunit/phpunit": "^4.7.0",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "bitExpert\\Slf4PsrLog\\": "src/bitExpert/Slf4PsrLog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Stephan Hochdörfer",
+                    "email": "S.Hochdoerfer@bitExpert.de"
+                }
+            ],
+            "description": "Simple Logging Facade for Loggers implementing PSR-3 logging interface.",
+            "time": "2015-10-18 15:43:07"
+        },
+        {
+            "name": "bitexpert/specialist",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bitExpert/specialist.git",
+                "reference": "eff27ee453df22d4a7f14e57e730fc0d32663d91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bitExpert/specialist/zipball/eff27ee453df22d4a7f14e57e730fc0d32663d91",
+                "reference": "eff27ee453df22d4a7f14e57e730fc0d32663d91",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "^1.1",
+                "php": "^5.5|^7.0"
+            },
+            "require-dev": {
+                "bitexpert/phing-securitychecker": "^0.2.1",
+                "monolog/monolog": "^1.14.0",
+                "phing/phing": "^2.8.0",
+                "phpdocumentor/phpdocumentor": "^2.8",
+                "phpunit/php-code-coverage": "^2.1.0",
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "bitExpert\\Specialist\\": "src/bitExpert/Specialist"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Stephan Hochdörfer",
+                    "email": "S.Hochdoerfer@bitExpert.de",
+                    "homepage": "http://www.bitExpert.de"
+                },
+                {
+                    "name": "Peter Hildenbrand",
+                    "email": "P.Hildenbrand@bitExpert.de",
+                    "homepage": "http://www.bitExpert.de"
+                }
+            ],
+            "description": "A simple array container implementing container-interop.",
+            "time": "2016-06-19 08:32:34"
+        },
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.21.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "f42fbdfd53e306bda545845e4dbfd3e72edb4952"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f42fbdfd53e306bda545845e4dbfd3e72edb4952",
+                "reference": "f42fbdfd53e306bda545845e4dbfd3e72edb4952",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "jakub-onderka/php-parallel-lint": "0.9",
+                "php-amqplib/php-amqplib": "~2.4",
+                "php-console/php-console": "^3.1.3",
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "2.3.0",
+                "ruflin/elastica": ">=0.90 <3.0",
+                "sentry/sentry": "^0.13",
+                "swiftmailer/swiftmailer": "~5.3"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "sentry/sentry": "Allow sending log messages to a Sentry server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2016-07-29 03:23:52"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06 14:39:51"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.24.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3566d311a92aae4deec6e48682dc5a4528c4a512",
+                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.7"
+            },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.24-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2016-05-30 09:11:59"
+        },
+        {
+            "name": "willdurand/negotiation",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/willdurand/Negotiation.git",
+                "reference": "a8ce6da7acdf07351ccd6a9359c571ebc0725a21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/a8ce6da7acdf07351ccd6a9359c571ebc0725a21",
+                "reference": "a8ce6da7acdf07351ccd6a9359c571ebc0725a21",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Negotiation\\": "src/Negotiation"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "will+git@drnd.me"
+                }
+            ],
+            "description": "Content Negotiation tools for PHP provided as a standalone library.",
+            "homepage": "http://williamdurand.fr/Negotiation/",
+            "keywords": [
+                "accept",
+                "content",
+                "format",
+                "header",
+                "negotiation"
+            ],
+            "time": "2015-11-21 14:23:02"
+        },
+        {
+            "name": "zendframework/zend-diactoros",
+            "version": "1.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-diactoros.git",
+                "reference": "b1d59735b672865dbeb930805029c24f226e3e77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/b1d59735b672865dbeb930805029c24f226e3e77",
+                "reference": "b1d59735b672865dbeb930805029c24f226e3e77",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4 || ^7.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "~1.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6",
+                "squizlabs/php_codesniffer": "^2.3.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev",
+                    "dev-develop": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Diactoros\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "PSR HTTP Message implementations",
+            "homepage": "https://github.com/zendframework/zend-diactoros",
+            "keywords": [
+                "http",
+                "psr",
+                "psr-7"
+            ],
+            "time": "2016-03-17 18:02:05"
+        },
+        {
+            "name": "zendframework/zend-escaper",
+            "version": "2.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-escaper.git",
+                "reference": "2dcd14b61a72d8b8e27d579c6344e12c26141d4e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-escaper/zipball/2dcd14b61a72d8b8e27d579c6344e12c26141d4e",
+                "reference": "2dcd14b61a72d8b8e27d579c6344e12c26141d4e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "1.7.*",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev",
+                    "dev-develop": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Escaper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "homepage": "https://github.com/zendframework/zend-escaper",
+            "keywords": [
+                "escaper",
+                "zf2"
+            ],
+            "time": "2016-06-30 19:48:38"
+        },
+        {
+            "name": "zendframework/zend-stratigility",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-stratigility.git",
+                "reference": "b78388f096f669f9a9f15dabe5fa73c4d9fd9a09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-stratigility/zipball/b78388f096f669f9a9f15dabe5fa73c4d9fd9a09",
+                "reference": "b78388f096f669f9a9f15dabe5fa73c4d9fd9a09",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4.8 || ^7.0",
+                "psr/http-message": "~1.0.0",
+                "zendframework/zend-escaper": "~2.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.7",
+                "squizlabs/php_codesniffer": "^2.3.1",
+                "zendframework/zend-diactoros": "~1.0"
+            },
+            "suggest": {
+                "psr/http-message-implementation": "Please install a psr/http-message-implementation to consume Stratigility; e.g., zendframework/zend-diactoros"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev",
+                    "dev-develop": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Stratigility\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Middleware for PHP",
+            "homepage": "https://github.com/zendframework/zend-stratigility",
+            "keywords": [
+                "http",
+                "middleware",
+                "psr-7"
+            ],
+            "time": "2016-03-24 22:10:30"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

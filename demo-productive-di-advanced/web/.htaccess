@@ -1,0 +1,55 @@
+<IfModule mod_expires.c>
+        ExpiresActive On
+        ExpiresByType text/html "access plus 5 minutes"
+        ExpiresByType image/gif "access plus 7 day"
+        ExpiresByType image/png "access plus 7 day"
+        ExpiresByType image/jpg "access plus 7 day"
+        ExpiresByType image/jpeg "access plus 7 day"
+        ExpiresByType image/ico "access plus 7 day"
+        ExpiresByType image/svg+xml "access plus 7 day"
+        ExpiresByType text/css "access plus 7 day"
+        ExpiresByType text/javascript "access plus 7 day"
+        ExpiresByType application/x-javascript "access plus 7 day"
+</IfModule>
+
+<IfModule mod_deflate.c>
+        SetOutputFilter DEFLATE
+        BrowserMatch ^Mozilla/4 gzip-only-text/html
+        BrowserMatch ^Mozilla/4\.0[678] no-gzip
+        BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+        # Don't compress images, movies or zip files
+        SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+        SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
+        SetEnvIfNoCase Request_URI \.(?:avi|mov|mp3|mp4|rm|flv|swf|mp?g)$ no-gzip dont-vary
+        <IfModule mod_headers.c>
+                # properly handle requests coming from behind proxies
+                Header append Vary User-Agent
+        </IfModule>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+        SetEnv HTTP_MOD_REWRITE On
+        RewriteEngine On
+
+        # Activate the following rules on the production server!
+        # SetEnvIf Authorization .+ HTTP_AUTHORIZATION=$0
+        # RewriteBase '/'
+        # RewriteCond %{SERVER_PORT} !443
+        # RewriteRule (.*) https://admin.unkonf.de/$1 [L]
+
+        # The following rule tells Apache that if the requested filename
+        # exists, simply serve it.
+        RewriteCond %{REQUEST_FILENAME} -s [OR]
+        RewriteCond %{REQUEST_FILENAME} -l [OR]
+        RewriteCond %{REQUEST_FILENAME} -d
+        RewriteRule ^.*$ - [NC,L]
+        # The following rewrites all other queries to index.php. The
+        # condition ensures that if you are using Apache aliases to do
+        # mass virtual hosting, the base path will be prepended to
+        # allow proper resolution of the index.php file; it will work
+        # in non-aliased environments as well, providing a safe, one-size
+        # fits all solution.
+        RewriteCond %{REQUEST_URI}::$1 ^(/.+)(.+)::\2$
+        RewriteRule ^(.*) - [E=BASE:%1]
+        RewriteRule ^(.*)$ %{ENV:BASE}index.php [NC,L]
+</IfModule>

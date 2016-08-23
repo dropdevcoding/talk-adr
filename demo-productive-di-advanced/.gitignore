@@ -1,0 +1,8 @@
+/vendor
+/build
+/logs/*
+!/logs/.gitkeep
+/cache/*
+!/cache/.gitkeep
+/cache/di/*
+!/cache/di/.gitkeep

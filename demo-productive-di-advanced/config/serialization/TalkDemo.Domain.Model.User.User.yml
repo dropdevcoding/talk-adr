@@ -1,0 +1,13 @@
+TalkDemo\Domain\Model\User\User:
+    exclusion_policy: ALL
+    exclude: false
+    read_only: false
+    access_type: property # defaults to property
+    properties:
+      id:
+          exclude: false
+          expose: true
+      username:
+          exclude: false
+          expose: true
+
