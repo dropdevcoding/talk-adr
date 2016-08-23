@@ -6,3 +6,5 @@
 !/cache/.gitkeep
 /cache/di/*
 !/cache/di/.gitkeep
+/cache/serialization
+!/cache/serialization/.gitkeep
